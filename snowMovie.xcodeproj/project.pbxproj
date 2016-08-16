@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7153C4FB1D5DEC8300B34A79 /* park1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7153C4FA1D5DEC8300B34A79 /* park1.png */; };
+		7153C4FD1D5DEC9400B34A79 /* park2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7153C4FC1D5DEC9400B34A79 /* park2.png */; };
 		71937F861D56C32400B90E49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71937F851D56C32400B90E49 /* main.m */; };
 		71937F891D56C32400B90E49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71937F881D56C32400B90E49 /* AppDelegate.m */; };
 		71937F8C1D56C32400B90E49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71937F8B1D56C32400B90E49 /* ViewController.m */; };
@@ -16,6 +18,9 @@
 		71937F9F1D56C32400B90E49 /* snowMovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71937F9E1D56C32400B90E49 /* snowMovieTests.m */; };
 		71937FAA1D56C32400B90E49 /* snowMovieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71937FA91D56C32400B90E49 /* snowMovieUITests.m */; };
 		71937FB81D56F2BD00B90E49 /* snowpark.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 71937FB71D56F2BD00B90E49 /* snowpark.jpeg */; };
+		71FE6BEE1D633AFE0084999F /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71FE6BED1D633AFE0084999F /* Assets.bundle */; };
+		71FE6BF11D633B210084999F /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FE6BF01D633B210084999F /* YTPlayerView.m */; };
+		71FE6BF71D633D130084999F /* YoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FE6BF61D633D130084999F /* YoutubeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7153C4FA1D5DEC8300B34A79 /* park1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = park1.png; sourceTree = "<group>"; };
+		7153C4FC1D5DEC9400B34A79 /* park2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = park2.png; sourceTree = "<group>"; };
 		71937F811D56C32400B90E49 /* snowMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snowMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71937F851D56C32400B90E49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71937F871D56C32400B90E49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +60,11 @@
 		71937FA91D56C32400B90E49 /* snowMovieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = snowMovieUITests.m; sourceTree = "<group>"; };
 		71937FAB1D56C32400B90E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71937FB71D56F2BD00B90E49 /* snowpark.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowpark.jpeg; sourceTree = "<group>"; };
+		71FE6BED1D633AFE0084999F /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
+		71FE6BEF1D633B210084999F /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		71FE6BF01D633B210084999F /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		71FE6BF51D633D130084999F /* YoutubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YoutubeViewController.h; path = ../YoutubeViewController.h; sourceTree = "<group>"; };
+		71FE6BF61D633D130084999F /* YoutubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YoutubeViewController.m; path = ../YoutubeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7111D4171D62027D0060F89E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7153C4FA1D5DEC8300B34A79 /* park1.png */,
+				7153C4FC1D5DEC9400B34A79 /* park2.png */,
+				71937FB71D56F2BD00B90E49 /* snowpark.jpeg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		71937F781D56C32400B90E49 = {
 			isa = PBXGroup;
 			children = (
@@ -103,12 +125,17 @@
 		71937F831D56C32400B90E49 /* snowMovie */ = {
 			isa = PBXGroup;
 			children = (
+				7111D4171D62027D0060F89E /* Resources */,
 				71937F871D56C32400B90E49 /* AppDelegate.h */,
 				71937F881D56C32400B90E49 /* AppDelegate.m */,
+				71FE6BF51D633D130084999F /* YoutubeViewController.h */,
+				71FE6BF61D633D130084999F /* YoutubeViewController.m */,
 				71937F8A1D56C32400B90E49 /* ViewController.h */,
 				71937F8B1D56C32400B90E49 /* ViewController.m */,
+				71FE6BEF1D633B210084999F /* YTPlayerView.h */,
+				71FE6BF01D633B210084999F /* YTPlayerView.m */,
 				71937F8D1D56C32400B90E49 /* Main.storyboard */,
-				71937FB71D56F2BD00B90E49 /* snowpark.jpeg */,
+				71FE6BED1D633AFE0084999F /* Assets.bundle */,
 				71937F901D56C32400B90E49 /* Assets.xcassets */,
 				71937F921D56C32400B90E49 /* LaunchScreen.storyboard */,
 				71937F951D56C32400B90E49 /* Info.plist */,
@@ -248,6 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71937F941D56C32400B90E49 /* LaunchScreen.storyboard in Resources */,
+				7153C4FB1D5DEC8300B34A79 /* park1.png in Resources */,
+				7153C4FD1D5DEC9400B34A79 /* park2.png in Resources */,
+				71FE6BEE1D633AFE0084999F /* Assets.bundle in Resources */,
 				71937F911D56C32400B90E49 /* Assets.xcassets in Resources */,
 				71937FB81D56F2BD00B90E49 /* snowpark.jpeg in Resources */,
 				71937F8F1D56C32400B90E49 /* Main.storyboard in Resources */,
@@ -277,7 +307,9 @@
 			files = (
 				71937F8C1D56C32400B90E49 /* ViewController.m in Sources */,
 				71937F891D56C32400B90E49 /* AppDelegate.m in Sources */,
+				71FE6BF11D633B210084999F /* YTPlayerView.m in Sources */,
 				71937F861D56C32400B90E49 /* main.m in Sources */,
+				71FE6BF71D633D130084999F /* YoutubeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +456,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = snowMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jun.roi.snowMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +472,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = snowMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jun.roi.snowMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";

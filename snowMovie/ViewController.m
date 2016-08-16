@@ -26,6 +26,6 @@
 }
 
 - (IBAction)show01:(id)sender {
-    NSLog(@"button click");
+    NSLog(@"button click"); 
 }
 @end

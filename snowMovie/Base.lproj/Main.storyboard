@@ -49,7 +49,7 @@
                                 <rect key="frame" x="295" y="28" width="46" height="30"/>
                                 <state key="normal" title="7번"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowpark.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rZd-gV-LjR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="park1.png" translatesAutoresizingMaskIntoConstraints="NO" id="rZd-gV-LjR">
                                 <rect key="frame" x="32" y="73" width="323" height="159"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-c2-LD1">
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="330.5" y="635.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Youtube View Controller-->
         <scene sceneID="Xea-bb-2zn">
             <objects>
-                <viewController id="elP-yo-2ED" sceneMemberID="viewController">
+                <viewController id="elP-yo-2ED" customClass="YoutubeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FtK-03-8q5"/>
                         <viewControllerLayoutGuide type="bottom" id="lWJ-5c-QxZ"/>
@@ -88,14 +88,45 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebd-5Y-ibc">
                                 <rect key="frame" x="20" y="28" width="46" height="30"/>
-                                <state key="normal" title=" Back"/>
+                                <color key="backgroundColor" red="0.41596375533555108" green="1" blue="0.54906705523565924" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title=" Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="nMa-oo-Ael"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="nMa-oo-Ael"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RrC-nY-IAu" customClass="YTPlayerView">
+                                <rect key="frame" x="20" y="90" width="335" height="452"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRO-JZ-6mr">
+                                <rect key="frame" x="231" y="570" width="84" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.29578573972870992" blue="0.47531555351740384" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopVideo:" destination="elP-yo-2ED" eventType="touchUpInside" id="kTG-Q6-SLQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1n-9z-4ml">
+                                <rect key="frame" x="56" y="570" width="74" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.3039299182072579" blue="0.42341718589549848" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideo:" destination="elP-yo-2ED" eventType="touchUpInside" id="AUR-BP-a8i"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.68353065918810185" green="1" blue="0.34893113106386853" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="playerView" destination="RrC-nY-IAu" id="99X-qn-Njp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcQ-qV-Rq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,6 +134,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="park1.png" width="1606" height="700"/>
         <image name="snowpark.jpeg" width="690" height="458"/>
     </resources>
 </document>
